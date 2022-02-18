@@ -39,8 +39,8 @@
             <li><a  href="plan.php">Purchase plan</a></li>
             <li><a href="policy.html">policy</a></li>
             <li><a href="how it works.php">How it works</a></li>
-            <li><a  href="about us page.html">about us</a></li>
-            <li><a  href="contact.">Contact us</a></li>
+            <li><a  href="about us.html">about us</a></li>
+            <li><a  href="contact.html">Contact us</a></li>
           </ul>
   </header>
   <br>
@@ -72,24 +72,36 @@
         </div>
       </div>
     </div>
+</section>
+<style>
+  .doge{
+    padding: 50px;
+    border: 1px solid wheat;
+    margin: 20px;
+  }
+</style>
 
+<div class="doge">
     <a href="Login.php">
       <button id="get-started" class="btn btn-primary">get started</button>
     </a>
-
-
-  </section>
+     <h1 class="doge">DO YOU KNOW !!!</h1><br>
+     <h2>DOGECOIN</h2>
+     <h5>crypto currency</h5>
+     <img src="image/doge.jpg" alt="doge">
+     <p>Dogecoin is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided to create a payment system as a "joke", making fun of the wild speculation in cryptocurrencies at the time.
+        It is considered both the first "meme coin", and, more specifically, the first "dog coin".</p>
+</div>
   <section class="vendor-section">
     <div class="vendor">
-      <h1>Vendors</h1>
+      <h1>Customer service</h1>
 
     </div>
 
     <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">ICE TV</a>
-    
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">JUSTICE</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">VALIANT</a>
+      <a href="#" class="list-group-item list-group-item-action">ICE TV - +234 907 656 7991 </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">JUSTICE - +234 905 204 3036 </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">VALIANT JOE - +234 902 525 2136</a>
      
     </div>
 
@@ -98,8 +110,8 @@
   <main id="footer1">
     <ul>
      <li><a href="#">blog</a></li>
-     <li><a href="#">about us</a></li>
-     <li><a href="#">policy</a></li>
+     <li><a href="about us.html">about us</a></li>
+     <li><a href="policy.html">policy</a></li>
      <li><a href="#">investment guides</a></li>
     </ul>
 

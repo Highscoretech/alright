@@ -37,16 +37,16 @@
                     <br>
                     <div class="form-group">
                     <select class="form-select" aria-label="Default select example>" name="plan" required>
-                        <option value="demo">Select your favourite plan </option>
-                        <option value="pearl">Pearl plan => $20 </option>
-                        <option value="Red_corol">Red corol plan => $50</option>
-                        <option value="Tanzanite ">Tanzanite => $150</option>
-                        <option value="Saphire">Sapphire => $250</option>
-                        <option value="Opal">Opal plan => $500</option>
-                        <option value="Black_diamond">Black_diamond => $1000</option>
-                        <option value="Benitoite">Benitoite plan => $2000</option>
-                        <option value="Ruby">Rubby plan => $3000</option>
-                        <option value="Musgravite">Musgravite => $5000</option>
+                        <option value="0">Select your favourite plan </option>
+                        <option value="1">Pearl plan => $20 </option>
+                        <option value="2">Red corol plan => $50</option>
+                        <option value="3">Tanzanite => $150</option>
+                        <option value="4">Sapphire => $250</option>
+                        <option value="5">Opal plan => $500</option>
+                        <option value="6">Black_diamond => $1000</option>
+                        <option value="7">Benitoite plan => $2000</option>
+                        <option value="8">Rubby plan => $3000</option>
+                        <option value="9">Musgravite => $5000</option>
                     </select>
                     </div>
                         

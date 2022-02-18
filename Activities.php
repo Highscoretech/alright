@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
 </head>
+
+<script>
+  function success(){
+    alert ("You have completed today's task, PLEASE DON'T CLICK AGAIN TO AVOID UNWANTED ACTIONS, YOUR WALLET WILL BE CREDITED")
+}
+</script>
+
 <body id="body-pi">
   
   <br>
@@ -31,9 +38,12 @@
         <!-- <form action="empty" onsubmit="return false" method="post"> -->
         <!-- <input type="submit" name="click_button" value="t">
         </form> -->
+        <p>To perform your task <a href="#">click here</a> </p><br>
 
+        <p>Click below when your down with your task.</p>
+        <p>NOTE: If you dont do your task correctly it will definitely affect you during withdawal</p>
         <form action="amount.php" method="post">
-        <input type="submit" name="click_button" value="click to complete your task">
+        <input onclick="success()" type="submit" name="click_button" value="I have done my task">
         </form>
         <br>
         <br>

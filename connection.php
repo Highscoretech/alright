@@ -21,7 +21,8 @@ $instagram = $_REQUEST['instagram'];
 $twitter = $_REQUEST['twitter'];
 $crypto = $_REQUEST['crypto'];
 $wallect = $_REQUEST['wallect'];
-$_SESSION['referral_code'] = $_REQUEST['referral_code'];
+$payment = $_REQUEST['payment'];
+$referralcode = $_REQUEST['referral_code'];
 $password = $_REQUEST['password'];
 $confirm = $_REQUEST['confirm'];
 $ref = 0;
@@ -30,30 +31,160 @@ $refer = strtoupper(bin2hex(random_bytes(4)));
 $plan = "";
 $amount = 0;
 
+	$sql = "SELECT * FROM payment WHERE paymentid = '{$payment}'";
+	if ($result = mysqli_query($conn, $sql)) {
+	while ($row = $result->fetch_assoc()) {
+		$plan = $row["plan"];
+		$paymentid = $row["paymentid"];
+			if ($payment != $paymentid){
+				echo "invalid payment ID";
+				echo "<script>
+                alert('Invalid payment ID') </script>";
+			}else{
+				if ($referralcode == ''){
+					$sql = "INSERT INTO collage VALUES ('','$first_name',
+					'$last_name','$email','$DOB','$sex','$phone','$country','$city','$facebook', 
+					'$instagram', '$twitter','$crypto',' $wallect','$password','$plan', Now(), '$amount', '$ref', '$refer') ";
+					mysqli_query($conn, $sql);
+				// Page on which the user will be
+				// redirected after logging in
+						// header('location: home.php');
+								echo "ERROR: Hush! Sorry $sql. ";
+								// // Close connection
+								mysqli_close($conn);
+				}else{
+					$sql = "INSERT INTO collage VALUES ('','$first_name',
+					'$last_name','$email','$DOB','$sex','$phone','$country','$city','$facebook', 
+					'$instagram', '$twitter','$crypto',' $wallect','$password','$plan', Now(), '$amount', '$ref', '$refer') ";
+					mysqli_query($conn, $sql);
+					// Page on which the user will be
+					
+					echo "ERROR: Hush! Sorry $sql. ";
+						
+						if ($plan == 1){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 1;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+						if ($plan == 2){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 2;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
 
-	// Performing insert query execution
-	// here our table name is college
-	$select = mysqli_query($conn, "SELECT * FROM collage WHERE email = '". $_REQUEST['email']."'");
-	if(mysqli_num_rows($select)) {
-		echo "<script>
-        alert('This email address already existed') </script>";
-		exit('This email address is already used!');
+						if ($plan == 3){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 5;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+						
+						if ($plan == 4){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 7;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
 
-	}else{
-		include ('referral.php');
-		$sql = "INSERT INTO collage VALUES ('','$first_name',
-		'$last_name','$email','$DOB','$sex','$phone','$country','$city','$facebook', 
-		'$instagram', '$twitter','$crypto',' $wallect','$password','$plan', Now(), '$amount', '$ref', '$paid_into', '$refer') ";
-		mysqli_query($conn, $sql);
-	// Page on which the user will be
-	// redirected after logging in
-	header('location: home.php');
-			echo "ERROR: Hush! Sorry $sql. "
-				. mysqli_error($conn);
+						if ($plan == 5){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 10;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+
+						if ($plan == 6){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 20;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+
+						if ($plan == 7){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 50;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+						if ($plan == 8){
+							$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								while ($row = $result->fetch_assoc()) {
+									$bonus = $row["ref_amount"] + 100;
+								}echo $bonus;
+								$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+								if ($result = mysqli_query($conn, $sql)) {
+									echo 'sucessfully';
+								}					 
+							}
+						}
+						if ($plan == 9){
+						$sql = "SELECT * FROM collage WHERE refer = '{$referralcode}'";
+						if ($result = mysqli_query($conn, $sql)) {
+							while ($row = $result->fetch_assoc()) {
+								$bonus = $row["ref_amount"] + 200;
+							}echo $bonus;
+							$sql = "UPDATE collage SET `ref_amount`= '{$bonus}' WHERE refer = '{$referralcode}'";
+							if ($result = mysqli_query($conn, $sql)) {
+								echo 'sucessfully';
+							}					 
+						}
+						// // Close connection
+						// redirected after logging in
+						header('location: home.php');
+						mysqli_close($conn);
+						}else{
+							echo "nothing";
+					}
+				}
+			}
+
+		}
 	}
+}
 
-	}
-	
-// Close connection
-mysqli_close($conn);
 ?>

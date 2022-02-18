@@ -47,7 +47,7 @@
             <li><a  href="plan.php">Renew subscription</a></li>
             <li><a href="policy.html">policy</a></li>
             <li><a href="how it works.php">How it works</a></li>
-            <li><a  href="about us page.html">about us</a></li>
+            <li><a  href="about us.html">about us</a></li>
             <li><a  href="contact.html">Contact us</a></li>
             <li><a  href="logout.php">Logout</a></li>
           </ul>

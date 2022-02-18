@@ -251,7 +251,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 #body-pi{
-    background: rgb(3, 3, 95);
+    background: rgb(2, 2, 66);
     background-size: cover;
     background-repeat: repeat;
     color: white;
@@ -309,7 +309,7 @@ body{
   .menu-box{
     top: 0;
     z-index: 100;
-    background: rgb(14, 13, 13); 
+    background: rgb(8, 1, 1); 
     width: 100%;
     position: fixed;
     margin: 0;
@@ -466,3 +466,7 @@ body{
     color: #e2ebe8;
     text-decoration: none;
   }
+.doge{
+  padding: 50px;
+  color: #04AA6D;
+}

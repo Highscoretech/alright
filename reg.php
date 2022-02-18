@@ -308,7 +308,7 @@
           <label for="city"><b>City</b></label>
           <input type="text" id="city" placeholder="Enter city " name="city" required>
 
-          <label for="facebook"><b>Facebook</b></label>
+          <label for="facebk"><b>Facebook</b></label>
           <input type="text" id="facebook-el" placeholder="Enter facebook link " name="facebook" required>
 
           <label for="name"><b>Instagram</b></label>
@@ -326,8 +326,9 @@
             </select>
             <input type="text" placeholder="paste your address here" id="wallect-address" name="wallect" required>
           </div><br>
-          <label for="refer"><b>Payment ID</b></label>
-          <input id="ref" type="text" placeholder="Enter your payment ID" name="payment_ID">
+          
+          <label for="payment"><b>payment</b></label>
+          <input type="text" placeholder="paste your payment ID" id="wallect-address" name="payment" required>
           
             <script>
               let payment = document.getElementById('ref')
