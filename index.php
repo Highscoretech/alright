@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
 </head>
-<body id="body-pi">
+<style>
+  #index{
+    background-image: url("image/background.jpeg");
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: acosh;
+
+  }
+</style>
+<body id="index">
   <header>
 
   </div>
@@ -85,7 +94,8 @@
     <a href="Login.php">
       <button id="get-started" class="btn btn-primary">get started</button>
     </a>
-     <h1 class="doge">DO YOU KNOW !!!</h1><br>
+     <h1>DO YOU KNOW !!!</h1><br>
+     <br>
      <h2>DOGECOIN</h2>
      <h5>crypto currency</h5>
      <img src="image/doge.jpg" alt="doge">
@@ -93,11 +103,7 @@
         It is considered both the first "meme coin", and, more specifically, the first "dog coin".</p>
 </div>
   <section class="vendor-section">
-    <div class="vendor">
-      <h1>Customer service</h1>
-
-    </div>
-
+      <h1>Customer service</h1><br>
     <div class="list-group">
       <a href="#" class="list-group-item list-group-item-action">ICE TV - +234 907 656 7991 </a>
       <a href="#" class="list-group-item list-group-item-action list-group-item-primary">JUSTICE - +234 905 204 3036 </a>
