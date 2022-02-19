@@ -46,9 +46,9 @@ $amount = 0;
 					'$last_name','$email','$DOB','$sex','$phone','$country','$city','$facebook', 
 					'$instagram', '$twitter','$crypto',' $wallect','$password','$plan', Now(), '$amount', '$ref', '$refer') ";
 					mysqli_query($conn, $sql);
-				// Page on which the user will be
-				// redirected after logging in
-						// header('location: home.php');
+					// Page on which the user will be
+					// redirected after logging in
+							// header('location: home.php');
 								echo "ERROR: Hush! Sorry $sql. ";
 								// // Close connection
 								mysqli_close($conn);
