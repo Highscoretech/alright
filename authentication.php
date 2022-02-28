@@ -7,11 +7,11 @@ if (isset($_POST['login_user'])) {
         $_SESSION['email']
         = $_POST['email'];
 
-    $emailEl = $_SESSION['email'];  
+    $emaili = $_SESSION['email'];  
     $passwordEl= $_POST['password'];  
       
         //to prevent from mysqli injection  
-        $emaili = stripcslashes($emailEl);  
+        $emaili = stripcslashes($emaili);  
         $passwordEl = stripcslashes($passwordEl);  
         $emailEl = mysqli_real_escape_string($conn, $emailEl);  
         $passwordEl = mysqli_real_escape_string($conn, $passwordEl); 

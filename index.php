@@ -61,9 +61,8 @@ http://www.templatemo.com/tm-492-app-starter
                     <li><a href="reg.php" class="smoothScroll">Sign up</a></li>
 				<li><a href="plan.php" class="smoothScroll">Purchase plan</a></li>
                 <li><a href="policy.html" class="smoothScroll">policy</a></li>
-                <li><a href="about us.html" class="smoothScroll">About</a></li>
                 <li><a href="how it works.php" class="smoothScroll">FAQ</a></li>
-        		<li><a href="#" data-toggle="modal" data-target="#modal1">Contact</a></li>
+        		
 			</ul>
 		</div>
 
@@ -146,7 +145,7 @@ http://www.templatemo.com/tm-492-app-starter
                     <h2 class="wow fadeInUp" data-wow-delay="0.4s">Centralized exchanges are sites that allow users to buy and sell 
                          cryptocurrencies for fiat currencies such as the US dollar or between digital assets such as BTC and ETH. They operate as 
                          trusted brokers in transactions and frequently serve as custodians, holding and safeguarding your assets</h2>
-                    <a href="#screenshot" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">Learn More</a>
+                    <a href="about us.html" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">About us</a>
                </div>
 
           </div>

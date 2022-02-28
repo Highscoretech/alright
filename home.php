@@ -1,105 +1,335 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rosnac investment company main page</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Rosnac company</title>
+<!--
+App Starter Template
+http://www.templatemo.com/tm-492-app-starter
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body id="body-pi">
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  <!-- <?php
+//   require('herokudb.php');
 
-<?php require('herokudb.php');
-?>
-  <header>
-    <br>
-    <br>
-    <br>
+//   $sql = "SELECT * FROM collage WHERE email = '{$emaili}' " ;
 
-  
-    </div>
-    <div class="sticky">
-      <div class="menu">
-        <div class="menu-box">
+// if ($result = mysqli_query($conn, $sql)) {
+//     while ($row = $result->fetch_assoc()) {
+//         $firstname = $row["first_name"];
+//         $lastname = $row["last_name"];
+//     }
+//   }
+  ?> -->
 
-          <a id="pins-menu" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> 
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </a>
-         
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <div class="navbar-logo">
 
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-          <ul class="menu-bar">
+<!-- PRE LOADER -->
 
-            <li><a href="Activities.php">Activities</a></li>
-            <li><a href="profile.php">Profile</a></li>
-            <li><a href="#" onclick="Notdue()">Withdraw</a></li>
-            <li><a  href="plan.php">Renew subscription</a></li>
-            <li><a href="policy.html">policy</a></li>
-            <li><a href="how it works.php">How it works</a></li>
-            <li><a  href="about us.html">about us</a></li>
-            <li><a  href="contact.html">Contact us</a></li>
-            <li><a  href="logout.php">Logout</a></li>
-          </ul>
-    
-        </div>
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
 
-  </header>
-  <section>
 
-  <div class="keys">
+
+<!-- Navigation Section -->
+
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="index.php" class="navbar-brand"><span>rosnac</span> company</a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+      <li><a href="profile.php" class="smoothScroll">Dashbord</a></li>
+                <li><a href="Activities.php" class="smoothScroll">Activities</a></li>
+				<li><a href="plan.php" class="smoothScroll">renew plan</a></li>
+        
                 
-        <h1 class="my-5">Hi, <?php echo $_SESSION['first_name'] ?> <b></b>Welcome to our site.</h1>
-        <br>
-        <h3> post will be dropping here on a regular</h3>
-    
-        <p>We are ever ready to give value to your money</p>
-    
-      </div>
+                <li><a href="how it works.php" class="smoothScroll">FAQ</a></li>
+        		<li><a href="#" data-toggle="modal" data-target="#modal1">Contact</a></li>
+            <li><a href="logout.php" class="smoothScroll">log-out</a></li>
+			</ul>
+		</div>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image/out1.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="image/out2.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="image/out3.jpeg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div>
+	</div>
+</div>
 
-  </section>
-<?php
-require("plan.php");
-?>
 
-  </section>
-  <main>
-    <ul id="footer1">
-     <li><a href="#">blog</a></li>
-     <li><a href="#">about us</a></li>
-     <li><a href="#">policy</a></li>
-     <li><a href="#">investment guides</a></li>
-    </ul>
-  </main>
-<footer>copyright</footer>
-  
+<!-- Home Section -->
 
-  
-<script src="script.js"></script>
-<script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<section id="home" class="main">
+     <div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+
+               <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
+                    <img src="image/home_img_mobile.png" class="img-responsive w-50" alt="Home">
+               </div>
+
+               <div class="col-md-6 col-sm-7 col-xs-12">
+                    <div class="home-thumb"><br><br><br><br><br><br><br>
+                         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Rosnac home</h1>
+                         <p class="wow fadeInUp" data-wow-delay="0.8s">for growth oriented investors ,Let our experts manage you capital while you de- stress..</p>
+                         <a href="about us.html" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s">about us</a>
+                    </div>
+               </div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- About Section -->
+
+<section id="about">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                         <h1>Hi <?php echo "$firstname $lastname" ?> </h1>
+                         <hr>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                   <h2>Get inspired</h2>
+                   <h3 class="wow fadeInUp" data-wow-delay="0.8s">Making money seems not easy with the idea not known</h3>
+                   <p class="wow fadeInUp" data-wow-delay="0.4s">Consistent learning and passion makes everything seems easy to archieve, <a href="#" target="_blank">Knowing more</a> brings more.</p>
+               </div>
+
+
+                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <div class="about-thumb">
+                         <img src="images/team-img2.jpg" class="img-responsive" alt="Team">
+                              <div class="about-overlay">
+                                   <h3>for quick enquiry </h3>
+                                   <h4>chat our customer service</h4>
+                                   <ul class="social-icon">
+                                        <li><a href="https://www.facebook.com/profile.php?id=100078452199373" class="fa fa-facebook"></a></li>
+                                        <li><a href="https://www.instagram.com/rosnac_inv" class="fa fa-instagram"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                   </ul>
+                              </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Divider Section -->
+
+<section id="divider">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <h2  class="wow fadeInUp" data-wow-delay="0.4s" style="color: darkblue;">What is a centralized exchange</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">Centralized exchanges are sites that allow users to buy and sell 
+                         cryptocurrencies for fiat currencies such as the US dollar or between digital assets such as BTC and ETH. They operate as 
+                         trusted brokers in transactions and frequently serve as custodians, holding and safeguarding your assets</h2>
+                    <a href="#screenshot" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">Learn More</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Pricing Section -->
+
+<section id="pricing">
+     <div class="container">
+          <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                         <h1>Packages</h1>
+                         <hr>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$10</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>Silver plan</h3>
+                         </div>
+                         <p>20/30days</p>
+                         <p>total payout : $15</p>
+                         <p>Affiliate bonus 5%</p>
+                    
+                         <button class="btn btn-default section-btn">Purchase now</button>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$20</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>peal plan</h3>
+                         </div>
+                         <p>20/30days</p>
+                         <p>total payout : $30</p>
+                         <p>Affiliate bonus 5%</p>
+                    
+                         <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.8s">
+                    <div class="pricing-plan">
+                         <div class="pricing-month">
+                              <h2>$50</h2>
+                         </div>
+                         <div class="pricing-title">
+                              <h3>Red corol plan</h3>
+                         </div>
+                         <p>20/30days</p>
+                         <p>total payout : $75</p>
+                         <p>Affiliate bonus 5%</p>
+          
+                         <button class="btn btn-default section-btn">Register now</button>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+<h3 style="text-align: center;"> <a href="plan.php">view all plan</a></h3>
+
+<!-- Newsletter Section -->
+
+<section id="newsletter">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="wow bounceIn section-title">
+                         <h2>Send us a message</h2>
+                         <p class="wow fadeInUp" data-wow-delay="0.5s">Tell us where we need to improve, Your thoughts and oppinion will be highly appreciated</p>
+                    </div>
+                    <div class="wow fadeInUp newsletter-form" data-wow-delay="0.8s">
+                         <form action="#" method="post">
+                              <div class="col-md-8 col-sm-7">
+                                   <input name="message" type="text" class="form-control" id="email" placeholder="Your comment">
+                           	  </div>
+                                  <div class="col-md-8 col-sm-7">
+                                   <input name="email" type="email" class="form-control" id="email" placeholder="Your Email here">
+                           	  </div>
+                              <div class="col-md-4 col-sm-5">
+                                   <input name="submit" type="submit" class="form-control" id="submit" value="Send Newsletter">
+                              </div>
+                         </form>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-8 col-sm-6">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
+                         <p>Copyright 2020   terms/policy
+                         <span>||</span> 
+                         Design: <a href="#" title="free css templates" target="_blank">HighscoreTech</a></p>
+                    </div>
+               </div>
+
+			<div class="col-md-4 col-sm-6">
+				<ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
+                         <li><a href="https://www.facebook.com/profile.php?id=100078452199373" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="https://www.instagram.com/rosnac_inv" class="fa fa-instagram"></a></li>
+                         <!-- <li><a href="#" class="fa fa-linkedin"></a></li> -->
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Modal Contact -->
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+      <div class="modal-content modal-popup">
+          <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h2 class="modal-title">Contact Form</h2>
+          </div>
+
+               <form action="#" method="post">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                 	<input name="email" type="email" class="form-control" id="email" placeholder="Email Address" required>
+                 	<textarea name="message" rows="3" class="form-control" id="message" placeholder="Message" required></textarea>
+                    <input name="submit" type="submit" class="form-control" id="submit" value="Send Message">
+               </form>
+          </div>
+     </div>
+</div>
+
+
+<!-- Back top -->
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
 
 
 <?php
-require("config.php");
+require("herokudb.php");
 // $paymentId = $_SESSION['payment_ID'];
 //include("authentication.php");
 $emaili = $_SESSION['email'];
@@ -26,7 +26,6 @@ $emaili = $_SESSION['email'];
 // }
 $sql = "SELECT * FROM collage WHERE email = '{$emaili}' " ;
 
-echo "<b> <center>Dashboard</center> </b> <br> <br>";
 if ($result = mysqli_query($conn, $sql)) {
     while ($row = $result->fetch_assoc()) {
         $firstname = $row["first_name"];
@@ -48,32 +47,36 @@ if ($result = mysqli_query($conn, $sql)) {
         $ref_amount = $row["ref_amount"];
 
         if ($row["confirm_plan"] == 1){
-            $plan = "pearl";
+            $plan = "silver plan";
         }
+
         if ($row["confirm_plan"] == 2){
-            $plan = "Red corol";
+            $plan = "pearl plan";
         }
         if ($row["confirm_plan"] == 3){
-            $plan = "Tanzanite";
+            $plan = "Red corol plan";
         }
         if ($row["confirm_plan"] == 4){
-            $plan = "Sapphire";
+            $plan = "Tanzanite plan";
         }
         if ($row["confirm_plan"] == 5){
-            $plan = "Opal";
+            $plan = "Sapphire";
         }
         if ($row["confirm_plan"] == 6){
-            $plan = "Black Diamond";
+            $plan = "Opal plan";
         }
         if ($row["confirm_plan"] == 7){
-            $plan = "Benitoite";
+            $plan = "Black Diamond plan";
         }
         if ($row["confirm_plan"] == 8){
-            $plan = "Ruby";
+            $plan = "Benitoite plan";
         }
         if ($row["confirm_plan"] == 9){
-            $plan = "Musgravite";
+            $plan = "Ruby plan";
         }
+        // if ($row["confirm_plan"] == 9){
+        //     $plan = "Musgravite";
+        // }
 
         // echo '<b>'.$field1name.$field2name.'</b><br />';
         // echo $field3name.'<br />';

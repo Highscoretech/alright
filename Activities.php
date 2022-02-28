@@ -16,7 +16,7 @@
 </script>
 
 <body id="body-pi">
-  
+  <h1>TODAY's TASK IS OUT</h1>
   <br>
   <br>
   <br>
@@ -38,19 +38,14 @@
         <!-- <form action="empty" onsubmit="return false" method="post"> -->
         <!-- <input type="submit" name="click_button" value="t">
         </form> -->
-        <p>To perform your task <a href="#">click here</a> </p><br>
+        
 
-        <p>Click below when your down with your task.</p>
-        <p>NOTE: If you dont do your task correctly it will definitely affect you during withdawal</p>
+        <p>Click to complete your task.</p>
+
         <form action="amount.php" method="post">
-        <input onclick="success()" type="submit" name="click_button" value="I have done my task">
+        <input onclick="success()" type="submit" name="click_button" class="btn btn-primary" value="click me">
         </form>
         <br>
-        <br>
-        <p id="account-l">Today's task is sponsored by Mercy Otung</p>
-        <p>Click on the abave button, it redirect to her instagram page, <strong>make sure you follow her instagram account and leave comment on her current post.</strong></p>
-        <p>Not being consistence with your daily tasks attracks deductions during withdrawals.</p>
-    </div>
    
 
 
