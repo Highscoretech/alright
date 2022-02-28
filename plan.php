@@ -96,7 +96,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>20/30days</p>
                          <p>total payout : $15</p>
                          <p>Affiliate bonus 5%</p>
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -112,7 +112,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>total payout : $30</p>
                          <p>Affiliate bonus 5%</p>
                         
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -128,7 +128,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>total payout : $75</p>
                          <p>Affiliate bonus 5%</p>
                          
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -160,7 +160,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>20/30days</p>
                          <p>total payout : $150</p>
                          <p>Affiliate bonus 5%</p>
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -176,7 +176,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>total payout : $375</p>
                          <p>Affiliate bonus 5%</p>
                         
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -192,7 +192,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>total payout : $750</p>
                          <p>Affiliate bonus 5%</p>
                          
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -224,7 +224,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>20/30days</p>
                          <p>total payout : $1500</p>
                          <p>Affiliate bonus 5%</p>
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -239,8 +239,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>20/30days</p>
                          <p>total payout : $3000</p>
                          <p>Affiliate bonus 5%</p>
-                        
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
@@ -256,7 +255,7 @@ http://www.templatemo.com/tm-492-app-starter
                          <p>total payout : $4500</p>
                          <p>Affiliate bonus 5%</p>
                          
-                         <button class="btn btn-default section-btn">Purchase now</button>
+                         <button class="btn btn-default section-btn"> <a href="deposit.php">Purchase now</a></button>
                     </div>
                </div>
 
