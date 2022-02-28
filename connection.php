@@ -16,9 +16,6 @@ $sex = $_REQUEST['sex'];
 $phone = $_REQUEST['phone'];
 $country = $_REQUEST['country'];
 $city = $_REQUEST['city'];
-$facebook = $_REQUEST['facebook'];
-$instagram = $_REQUEST['instagram'];
-$twitter = $_REQUEST['twitter'];
 $crypto = $_REQUEST['crypto'];
 $wallect = $_REQUEST['wallect'];
 $payment = $_REQUEST['payment'];
@@ -30,6 +27,11 @@ $paid_into ="";
 $refer = strtoupper(bin2hex(random_bytes(4)));
 $plan = "";
 $amount = 0;
+
+$select = mysqli_query($connectionID, "SELECT `email` FROM `collage` WHERE `email` = '".$_POST['email']."'") or exit(mysqli_error($connectionID));
+if(mysqli_num_rows($select)) { 
+	echo 'email already exit';
+}
 if ($password != $confirm){
 	echo "password did not match";
 }else{

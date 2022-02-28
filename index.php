@@ -57,7 +57,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="Login.php" class="smoothScroll">login</a></li>
+				<li><a href="logi.php" class="smoothScroll">login</a></li>
                     <li><a href="reg.php" class="smoothScroll">Sign up</a></li>
 				<li><a href="plan.php" class="smoothScroll">Purchase plan</a></li>
                 <li><a href="policy.html" class="smoothScroll">policy</a></li>

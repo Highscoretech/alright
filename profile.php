@@ -96,7 +96,7 @@ $result->free();
            <h3 id="displayfirstName">Firstname :    <?php echo "$firstname" ?> </h3>
            <h3 id="displaysurname">Lastname :   <?php echo "$lastname" ?>  </h3>
            <h3 id="dispalyEmail">Email :    <?php echo "$email" ?> </h3>
-           <h3 id="displaySex">Sex :    <?php echo "$sex" ?> </h3></h3>
+           <h3 id="displaySex">Sex :    <?php echo "$sex" ?></h3>
            <h3 id="displayPhone">Phone :    <?php echo "$phone" ?></h3>
            <h3 id="displayCountry"> Country : <?php echo "$country" ?> </h3>
            <h3 id="displaycity"> City : <?php echo "$city" ?></h3><br>
