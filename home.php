@@ -31,18 +31,20 @@ http://www.templatemo.com/tm-492-app-starter
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-  <!-- <?php
-//   require('herokudb.php');
+<?php
+require("herokudb.php");
 
-//   $sql = "SELECT * FROM collage WHERE email = '{$emaili}' " ;
+$emaili = $_SESSION['email'];
 
-// if ($result = mysqli_query($conn, $sql)) {
-//     while ($row = $result->fetch_assoc()) {
-//         $firstname = $row["first_name"];
-//         $lastname = $row["last_name"];
-//     }
-//   }
-  ?> -->
+$sql = "SELECT * FROM collage WHERE email = '{$emaili}' " ;
+
+if ($result = mysqli_query($conn, $sql)) {
+    while ($row = $result->fetch_assoc()) {
+        $firstname = $row["first_name"];
+        $lastname = $row["last_name"];
+  }
+ }
+  ?> 
 
 
 <!-- PRE LOADER -->

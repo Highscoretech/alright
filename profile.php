@@ -13,17 +13,9 @@
 
 <?php
 require("herokudb.php");
-// $paymentId = $_SESSION['payment_ID'];
-//include("authentication.php");
-$emaili = $_SESSION['email'];
-// $sqll = "SELECT * FROM payment WHERE payment_ID = '{$payment_ID}' " ;
-// if ($result = mysqli_query($conn, $sqll)) {
-//     while ($row = $result->fetch_assoc()) {
-//         $paymentId = $row["payment_ID"];
 
-//         echo $paymentId;
-//     }
-// }
+$emaili = $_SESSION['email'];
+
 $sql = "SELECT * FROM collage WHERE email = '{$emaili}' " ;
 
 if ($result = mysqli_query($conn, $sql)) {
@@ -110,11 +102,6 @@ $result->free();
            <h3 id="displaycity"> City : <?php echo "$city" ?></h3><br>
            <br>
            <h3 id="displayerefer"> Referal_code : <?php echo "$refer" ?></h3><br>
-
-           <h2 style="color: rgb(9, 138, 58);">Social medial links</h2>
-           <h3 id="dispalyfacebook"> Facebook : <?php echo "$facebook" ?></h3>
-           <h3 id="displayinstagram"> Instagram : <?php echo "$instagram" ?></h3>
-           <h3 id="displayTwitter">Twitter : <?php echo "$twitter" ?></h3><br>
 
            <h2 style="color: rgb(9, 138, 58);">Your wallect address for withdrawals</h2>
            <h3 id="displaycrypto"> Crypto currency : <?php echo "$crypto" ?></h3>
