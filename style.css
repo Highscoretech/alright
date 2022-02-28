@@ -1,0 +1,472 @@
+body{
+    margin: 0;
+    padding: 1px;
+  }
+  /* css for log in and sign up buttons */
+  
+  .main-body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .submit-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .surmit-btn{
+    margin-left: 50%;
+  
+  }
+  
+  .submit-btn:hover {
+    background: black;
+  }
+  
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(21, 108, 223);
+    border: 1px solid rgb(21, 108, 223) ;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .cancelbtn:hover{
+    background: rgb(77, 235, 169);
+  }
+
+  
+  #form {
+    margin: 10px;
+      border: 3px solid #b1c2d4;
+      padding: 10px;
+      border-radius: 12px;
+    }
+    .logo{
+      border-radius: 50%;
+      padding-top: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    input[type=email], input[type=password], input[type=text], 
+    input[type=tel], input[type=url], .date, #country {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #7db1ec;
+      box-sizing: border-box;
+      border-radius: 12px;
+      outline: none;
+      box-shadow: none;
+      
+    }
+    /* Center the avatar image inside this container */
+  .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    
+    /* Avatar image */
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      text-align: center;
+      margin: 30px;
+      padding: 30px;
+    }
+    
+    /* The "Forgot password" text */
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+   
+  .wallect{
+    background: rgba(142, 153, 197, 0.5);
+    position: sticky;
+    display: flexs;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
+  }
+  .wallect, #account-el,#affiliate-el {
+    width: 100%;
+  }
+  #account-el, #affiliate-el{
+    margin: 4px;
+    padding: 4px;
+    color: white;
+  }
+  .profile-body{
+    background-image: url("image/Create-A-Background-Particles-System-With-JavaScript-And-Canvas-nodes.js.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .proContainer{
+    font-style: italic;
+    font-family: serif;
+    text-align: left;
+    color: white;
+  }
+  #proEdit{
+    width: 30%;
+    margin: 40px;
+    background: cornflowerblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  #proEdit:hover{
+    background: rgb(129, 46, 46, 0.5);
+    border-radius: 5px;
+  
+  }
+  
+  .proArrangement{
+    padding-left: 40px;
+  }
+  
+  .myPro{
+    text-align: center;
+    color: white;
+    font-family: serif;
+  }
+  .otp-input{
+    text-align: center;
+    margin: 40px;
+    width: 200px;
+  }
+  .otp-input-container{
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    padding-left: 30%;
+  }
+  .resend-otp{
+    text-decoration: none;
+    margin-left: 40px;
+    color: #7db1ec;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .resend-otp-container{
+    text-align: center;
+  }
+  #otp-sent-successfully{
+    background: rgba(14, 179, 14, 0.5);
+    padding: 40px 40px;
+    margin: 40px 40px;
+    color: white;
+    transform: rotate(30);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    text-align: center;
+  
+  }
+  .resend-otp:hover{
+    color: rgb(156, 118, 118);
+  
+  }
+  #error-otp{
+    background: rgba(179, 47, 14, 0.5);
+    padding: 40px 40px;
+    margin: 40px 40px;
+    color: white;
+    transform: rotate(30);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    text-align: center;
+  }
+  #head-card{
+    background-color:rgb(32, 139, 0, 1) ;
+    border: 2px solid rgb(228, 220, 220,1) ;
+    text-align: center;
+  }
+  #black-card{
+    background-color:rgb(67, 55, 236) ;
+    border: 2px solid rgb(228, 220, 220,1) ;
+    text-align: center;
+  }
+  
+  .plan-header{
+    margin-left: 60px;
+    width: 100%;
+    padding-top: 20px;
+  
+   
+  }
+  
+  #pearl-card{
+    background: rgb(32, 139, 0, 1) ;
+    float: inline-end;
+    margin: 15px;
+  }
+  #red-coral-head{
+    text-align: center;
+  }
+  #plans-button{
+    text-align: center;
+  }
+  
+  #redcoral-card{
+    background: rgb(32, 139, 0, 1) ;
+    margin: 15px;
+    float: inline-end;
+  }
+  #black-diamond-card{
+    background: rgb(67, 55, 236) ;
+    margin: 15px;
+  
+  }
+  
+  #card-heads{
+    background-color: rgb(32, 139, 0, 1);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border: 2px solid rgb(228, 220, 220,1) ;
+  }
+  #card-tittles{
+    color: rgb(39, 50, 209);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+#body-pi{
+    background: rgb(2, 2, 66);
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .mainbar{
+    display: none;
+  }
+  span a{
+    text-decoration: none;
+    color: #04AA6D;
+  }
+  
+  #contact{
+    background: blue;
+    color: white;
+    
+  }
+  
+  #contact-container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: lavenderblush;
+  }
+  #loginError, #errorEmail {
+    color: red;
+    padding-top: 0;
+    margin-top: 0;
+    font-style: italic;
+  }
+  .menu{
+    padding-top: 10px;
+    margin-top: 10px;
+    
+  
+  }
+  .card-header{
+    color: #d4dad7;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  
+  .menu-box{
+    top: 0;
+    z-index: 100;
+    background: rgb(8, 1, 1); 
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 10px;
+  
+  }
+  #get-started{
+  
+   margin: 20px;
+  }
+  
+  .menu-bar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30px;
+    padding: 20px;
+  
+  }
+  #pins-menu{
+    border: none;
+    background: none;
+    float: right;
+    padding-left: 20px;
+    
+  
+  }
+  
+  footer{
+    background-color: black;
+    text-align: center;
+  }
+  .vendor{
+    padding: 30px;
+    margin: 20px;
+    height: 40px;
+    font-weight: 30px;
+  
+  }
+  .vendor-section{
+    border: 1px solid rgb(219, 200, 200, 0.5);
+    margin: 20px;
+    padding: 20px;
+  }
+  li a{
+    text-decoration:none;
+    color: #b1c2d4;
+    margin: 40px;
+    padding: 20px;
+  
+  }
+  li{
+    margin: 10px;
+    font-size: 20px;
+  }
+  .home-welcome{
+   
+    padding: 20px;
+    margin-top: 130px;
+    margin-left: 30px;
+  }
+  .logo-image{
+    margin-right: 30px;
+  
+  }
+  .keys{
+    text-align: center;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .opex{
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  
+  #login{
+    float: left;
+    padding-top: 10px;
+  }
+  .navbar-logo{
+    text-align: center;
+  }
+  
+  .card-text{
+    color: #e2ebe8;
+  }
+  
+  
+  #copy-button{
+    background: rgb(26, 24, 24);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top: 40px;
+    border: 1px double rgb(61, 60, 60);
+    margin-left: 300px;
+    margin-top: 40px;
+  }
+  #copy-button:hover{
+    background: white;
+    color: black;
+  }
+  
+  .payment-address{
+    background: rgb(216, 40, 40,0.5);
+    margin: 10px;
+    padding: 12px;
+  }
+  #message{
+    color: rgba(36, 216, 20, 1);
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  #i-have-paid:hover{
+    color: skyblue;
+    background: white;
+    cursor: pointer;
+    
+  }
+  #i-have-paid{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    background: skyblue;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .accordion-body{
+    color: #04AA6D;
+  }
+  .form-select{
+    width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #7db1ec;
+      box-sizing: border-box;
+      border-radius: 12px;
+      
+  }
+  
+  footer{
+    background: rgb(14, 13, 13, 0.5);
+  
+    padding: 50px;
+  }
+  .task-container{
+    text-decoration: none;
+    text-align: center;
+    padding: 90px;
+  }
+  #task{
+    color: #e2ebe8;
+    text-decoration: none;
+  }
+.doge{
+  padding: 50px;
+  color: #04AA6D;
+}
