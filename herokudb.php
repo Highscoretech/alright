@@ -11,5 +11,17 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
+// // servername => localhost
+// 		// username => root
+// 		// password => empty
+// 		// database name => staff
+// $conn = mysqli_connect("localhost", "root", "", "facaulty");
+		
+// // 		// Check connection
+// 		if($conn === false){
+// 			die("ERROR: Could not connect. "
+//  				. mysqli_connect_error());
+// 	}
+
 
 ?>

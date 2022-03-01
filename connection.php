@@ -28,7 +28,7 @@ $refer = strtoupper(bin2hex(random_bytes(4)));
 $plan = "";
 $amount = 0;
 
-$select = mysqli_query($connectionID, "SELECT `email` FROM `collage` WHERE `email` = '".$_POST['email']."'") or exit(mysqli_error($connectionID));
+$select = mysqli_query($conn, "SELECT `email` FROM `collage` WHERE `email` = '".$_POST['email']."'") or exit(mysqli_error($connectionID));
 if(mysqli_num_rows($select)) { 
 	echo 'email already exit';
 }

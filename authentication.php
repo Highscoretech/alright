@@ -13,9 +13,9 @@ if (isset($_POST['login'])) {
         $emailEl = mysqli_real_escape_string($conn, $emailEl);  
         $passwordEl = mysqli_real_escape_string($conn, $passwordEl); 
         
-        $select = mysqli_query($connectionID, "SELECT `email` FROM `collage` WHERE `email` = '".$_POST['email']."'") or exit(mysqli_error($connectionID));
+        $select = mysqli_query($conn, "SELECT `email` FROM `collage` WHERE `email` = '".$_POST['email']."'") or exit(mysqli_error($connectionID));
             if(mysqli_num_rows($select)) { 
-                $sql = "SELECT * FROM collage WHERE email = '{$emaili}'"; 
+                $sql = "SELECT * FROM collage WHERE email = '{$emailEl}'"; 
                 if ($result = mysqli_query($conn, $sql)) {
                     while ($row = $result->fetch_assoc()) {
                         $email = $row["email"];

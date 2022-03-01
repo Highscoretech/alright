@@ -48,10 +48,10 @@ if ($result = mysqli_query($conn, $sql)) {
 
 
 <!-- PRE LOADER -->
-
+<!-- 
 <div class="preloader">
      <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
+</div> -->
 
 
 

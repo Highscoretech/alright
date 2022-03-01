@@ -34,10 +34,10 @@ http://www.templatemo.com/tm-492-app-starter
 
 
 <!-- PRE LOADER -->
-
+<!-- 
 <div class="preloader">
      <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
+</div> -->
 
 
 
